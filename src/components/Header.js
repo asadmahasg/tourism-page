@@ -1,11 +1,9 @@
 import React from "react";
-import ListOfTours from './ListOfTours';
-
+import Style from '../App.css'
 function Header(){
     return(
-        <div className="header-div">
+        <div className="header-div" style={Style}>
             <h1 className="heading-content">Our Tours</h1>
-            <ListOfTours />
         </div>
     );
 }

@@ -1,38 +1,96 @@
-.App {
+/* City.js styling */
+.card{
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.card:hover{
+  box-shadow: 2px 2px 10px gray;
+}
+.lower-part{
+  padding: 0px 30px 0px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.punch-line{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.price{
+  color: skyblue;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.price::before{
+  content: "$";
+  font-size: 14px;
+  margin-right: 1px;
+}
+#image{
+  width: 500px;
+  height: 320px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.content{
+  font-size: 14px;
+  color: gray;
+  letter-spacing: 0.5px;
+  height: 60px;
+  overflow: hidden;
+}
+.read{
+  width: 100px;
+}
+.read-more{
+  color: steelblue;
+  font-size: 17px;
+  cursor: pointer;
+}
+.read-more::before{
+  content: '... ';
+  cursor: text;
+}
+/* Heading.js styling */
+.header-div{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading-content{
+  letter-spacing: 1px;
+}
+.heading-content::after{
+  content: '';
+  display: block;
+  border: 2px skyblue solid;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CancelButton.js styling */
+.button{
+  border: 1px solid crimson;
+  width: 220px;
+  height: 28px;
+  background: none;
+  color: crimson;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-div{
+  align-content: center;
+  text-align: center;
 }
