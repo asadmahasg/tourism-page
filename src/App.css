@@ -56,10 +56,10 @@
   font-size: 17px;
   cursor: pointer;
 }
-.read-more::before{
+/* .read-more::before{
   content: '... ';
   cursor: text;
-}
+} */
 /* Heading.js styling */
 .header-div{
   text-align: center;

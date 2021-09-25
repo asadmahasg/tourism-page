@@ -1,14 +1,16 @@
 import React from "react";
 import Style from '../App.css';
-// import data from '../AppData'
+import data from '../AppData'
 
-function CancelButton(){
+function CancelButton(props){
     function CancelButtonHandler(){
-        console.log("Okay");
+        const objIndex = data.findIndex((obj => obj.id === props.id));
+        data[objIndex].state = false;
+        console.log("clicked" + objIndex + data[objIndex].state);
     }
     return(
         <div className="btn-div" style={Style}>
-            <button className="button" onClick={CancelButtonHandler}>Not Interested</button>
+            <button className="button" id="cancelBtn" onClick={CancelButtonHandler}>Not Interested</button>
         </div>
     );
 }
